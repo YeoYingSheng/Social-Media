@@ -11,6 +11,13 @@
   <body>
     <script src="index.js"></script>
 
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <i class="fa-solid fa-sun"></i>
+      <i class="fa-solid fa-moon"></i>
+      <div class="ball"></div>
+    </label>
+
     <ul>
       <li>
         <a href="https://www.facebook.com/yeo.yingsheng/">
@@ -40,5 +47,15 @@
         </a>
       </li>
     </ul>
+
+
+    <script>
+      const checkbox = document.getElementById('checkbox');
+
+      checkbox.addEventListener('change', () => {
+      document.body.classList.toggle('light');
+      });
+    </script>
+    
   </body>
 </html>
